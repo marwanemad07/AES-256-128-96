@@ -1,0 +1,64 @@
+module Key_Expansion (keyI,rcon,keyF);
+
+input [127:0]keyI;
+input[31:0]rcon;
+output [127:0]KeyL;
+wire [127:0]temp1,temp2;
+
+
+
+//******************first column**********************
+
+//1-RotWord
+assign temp1[127:120]=keyI[23:16];
+assign temp1[119:112]=keyI[15:8];
+assign temp1[111:104]=keyI[7:0];
+assign temp1[103:96]=keyI[31:24];
+
+
+
+//2-Subbytes
+sbox(temp1[127:124],temp1[123:120],temp2[127:120]);
+sbox(temp1[119:116],temp1[115:112],temp2[119:112]);
+sbox(temp1[111:108],temp1[107:104],temp2[111:104]);
+sbox(temp1[103:100],temp1[99:96],temp2[103:96]);
+
+ 
+
+
+//3-XOR and Rcon
+assign KeyF[127:120]=KeyL[127:120] xor KeyI[127:120] xor rcon[31:24];
+assign KeyF[119:112]=KeyL[119:112] xor KeyI[119:112] xor rcon[23:16];
+assign KeyF[111:104]=KeyL[111:104] xor KeyI[111:104] xor rcon[15:8];
+assign KeyF[103:96]=KeyL[103:96] xor KeyI[103:96] xor rcon[7:0];
+
+
+
+
+
+
+//*********************second column**********************
+assign KeyF[95:88]=KeyI[95:88] xor KeyL[127:120];
+assign KeyF[87:80]=KeyI[87:80] xor KeyL[119:112];
+assign KeyF[79:72]=KeyI[79:72] xor KeyL[111:104];
+assign KeyF[71:64]=KeyI[71:64] xor KeyL[103:96];
+
+
+
+
+//*********************third column************************
+assign KeyF[63:56]=KeyI[63:56] xor KeyL[95:88];
+assign KeyF[55:48]=KeyI[55:48] xor KeyL[87:80];
+assign KeyF[47:40]=KeyI[47:40] xor KeyL[79:72];
+assign KeyF[39:32]=KeyI[39:32] xor KeyL[71:64];
+
+
+
+//**********************fourth column**********************
+assign KeyF[31:24]=KeyI[31:24] xor KeyL[63:56];
+assign KeyF[23:16]=KeyI[23:16] xor KeyL[55:48];
+assign KeyF[15:8]=KeyI[15:8] xor KeyL[47:40];
+assign KeyF[7:0]=KeyI[7:0] xor KeyL[39:32];
+
+
+

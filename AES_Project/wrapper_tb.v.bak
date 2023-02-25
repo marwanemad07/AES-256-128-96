@@ -1,0 +1,12 @@
+module wrapper_tb();
+wire led;
+wrapper uut(.led(led));
+
+
+initial 
+begin 
+#50;
+
+end
+
+endmodule

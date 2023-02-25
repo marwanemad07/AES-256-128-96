@@ -1,0 +1,326 @@
+# Reading pref.tcl
+# do AES_Project_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/Quartus/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/Key_Expansion.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:02 on May 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project" D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/Key_Expansion.v 
+# -- Compiling module Key_Expansion
+# 
+# Top level modules:
+# 	Key_Expansion
+# End time: 13:37:02 on May 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/sbox.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:02 on May 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project" D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/sbox.v 
+# -- Compiling module sbox
+# 
+# Top level modules:
+# 	sbox
+# End time: 13:37:02 on May 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/shift_row.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:02 on May 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project" D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/shift_row.v 
+# -- Compiling module shift_row
+# 
+# Top level modules:
+# 	shift_row
+# End time: 13:37:02 on May 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/mix_col.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:02 on May 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project" D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/mix_col.v 
+# -- Compiling module mix_col
+# 
+# Top level modules:
+# 	mix_col
+# End time: 13:37:02 on May 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/main.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:02 on May 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project" D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/main.v 
+# -- Compiling module main
+# 
+# Top level modules:
+# 	main
+# End time: 13:37:02 on May 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/sub_byte.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:02 on May 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project" D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/sub_byte.v 
+# -- Compiling module sub_byte
+# 
+# Top level modules:
+# 	sub_byte
+# End time: 13:37:02 on May 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/round.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:02 on May 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project" D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/round.v 
+# -- Compiling module round
+# 
+# Top level modules:
+# 	round
+# End time: 13:37:03 on May 25,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/lastround.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:03 on May 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project" D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/lastround.v 
+# -- Compiling module lastround
+# 
+# Top level modules:
+# 	lastround
+# End time: 13:37:03 on May 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/Key_Expansion192.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:03 on May 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project" D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/Key_Expansion192.v 
+# -- Compiling module Key_Expansion192
+# 
+# Top level modules:
+# 	Key_Expansion192
+# End time: 13:37:03 on May 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/Key_Expansion256.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:03 on May 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project" D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/Key_Expansion256.v 
+# -- Compiling module Key_Expansion256
+# 
+# Top level modules:
+# 	Key_Expansion256
+# End time: 13:37:03 on May 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/main128.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:03 on May 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project" D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/main128.v 
+# -- Compiling module main128
+# 
+# Top level modules:
+# 	main128
+# End time: 13:37:03 on May 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/main192.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:03 on May 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project" D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/main192.v 
+# -- Compiling module main192
+# 
+# Top level modules:
+# 	main192
+# End time: 13:37:03 on May 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/main256.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:03 on May 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project" D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/main256.v 
+# -- Compiling module main256
+# 
+# Top level modules:
+# 	main256
+# End time: 13:37:03 on May 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/insub_byte.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:03 on May 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project" D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/insub_byte.v 
+# -- Compiling module insub_byte
+# 
+# Top level modules:
+# 	insub_byte
+# End time: 13:37:03 on May 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/insbox.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:03 on May 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project" D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/insbox.v 
+# -- Compiling module insbox
+# 
+# Top level modules:
+# 	insbox
+# End time: 13:37:03 on May 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/inv_mix_col.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:03 on May 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project" D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/inv_mix_col.v 
+# -- Compiling module inv_mix_col
+# 
+# Top level modules:
+# 	inv_mix_col
+# End time: 13:37:03 on May 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/inshift_row.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:04 on May 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project" D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/inshift_row.v 
+# -- Compiling module inshift_row
+# 
+# Top level modules:
+# 	inshift_row
+# End time: 13:37:04 on May 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/invround.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:04 on May 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project" D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/invround.v 
+# -- Compiling module invround
+# 
+# Top level modules:
+# 	invround
+# End time: 13:37:04 on May 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/invlastround.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:04 on May 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project" D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/invlastround.v 
+# -- Compiling module invlastround
+# 
+# Top level modules:
+# 	invlastround
+# End time: 13:37:04 on May 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/wrapper.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:04 on May 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project" D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/wrapper.v 
+# -- Compiling module wrapper
+# 
+# Top level modules:
+# 	wrapper
+# End time: 13:37:04 on May 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/decryption128.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:04 on May 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project" D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/decryption128.v 
+# -- Compiling module decryption128
+# 
+# Top level modules:
+# 	decryption128
+# End time: 13:37:04 on May 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/decryption192.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:04 on May 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project" D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/decryption192.v 
+# -- Compiling module decryption192
+# 
+# Top level modules:
+# 	decryption192
+# End time: 13:37:04 on May 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/decryption256.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:04 on May 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project" D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/decryption256.v 
+# -- Compiling module decryption256
+# 
+# Top level modules:
+# 	decryption256
+# End time: 13:37:04 on May 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/testbench.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:04 on May 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project" D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 13:37:04 on May 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
+# Start time: 13:37:05 on May 25,2022
+# Loading work.testbench
+# Loading work.main
+# Loading work.main128
+# Loading work.Key_Expansion
+# Loading work.sbox
+# Loading work.round
+# Loading work.sub_byte
+# Loading work.shift_row
+# Loading work.mix_col
+# Loading work.lastround
+# Loading work.decryption128
+# Loading work.invround
+# Loading work.inshift_row
+# Loading work.insub_byte
+# Loading work.insbox
+# Loading work.inv_mix_col
+# Loading work.invlastround
+# Loading work.main192
+# Loading work.Key_Expansion192
+# Loading work.decryption192
+# Loading work.main256
+# Loading work.Key_Expansion256
+# Loading work.decryption256
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (1) for port 'dataOUT'. The port definition is at: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/invlastround.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/a/a1/ri10 File: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/decryption128.v Line: 47
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (145) for port 'c'. The port definition is at: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/sbox.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/a/c/qqq/a4 File: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/Key_Expansion256.v Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (145) for port 'c'. The port definition is at: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/sbox.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/a/c/qqq1/a4 File: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/Key_Expansion256.v Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (145) for port 'c'. The port definition is at: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/sbox.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/a/c/qqq2/a4 File: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/Key_Expansion256.v Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (145) for port 'c'. The port definition is at: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/sbox.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/a/c/qqq3/a4 File: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/Key_Expansion256.v Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (145) for port 'c'. The port definition is at: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/sbox.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/a/c/qqq4/a4 File: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/Key_Expansion256.v Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (145) for port 'c'. The port definition is at: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/sbox.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/a/c/qqq5/a4 File: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/Key_Expansion256.v Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (145) for port 'c'. The port definition is at: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/sbox.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/a/c/qqq6/a4 File: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/Key_Expansion256.v Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (145) for port 'c'. The port definition is at: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/sbox.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/a/c1/qqq/a4 File: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/Key_Expansion256.v Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (145) for port 'c'. The port definition is at: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/sbox.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/a/c1/qqq1/a4 File: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/Key_Expansion256.v Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (145) for port 'c'. The port definition is at: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/sbox.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/a/c1/qqq2/a4 File: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/Key_Expansion256.v Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (145) for port 'c'. The port definition is at: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/sbox.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/a/c1/qqq3/a4 File: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/Key_Expansion256.v Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (145) for port 'c'. The port definition is at: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/sbox.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/a/c1/qqq4/a4 File: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/Key_Expansion256.v Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (145) for port 'c'. The port definition is at: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/sbox.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/a/c1/qqq5/a4 File: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/Key_Expansion256.v Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (145) for port 'c'. The port definition is at: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/sbox.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/a/c1/qqq6/a4 File: D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/Key_Expansion256.v Line: 67
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mustafa  Hostname: DESKTOP-VNS6L8D  ProcessID: 8296
+#           Attempting to use alternate WLF file "./wlftgdihm7".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftgdihm7
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break key hit
+# Break in Module main at D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/main.v line 19
+# End time: 13:38:55 on May 25,2022, Elapsed time: 0:01:50
+# Errors: 0, Warnings: 17

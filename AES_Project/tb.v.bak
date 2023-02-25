@@ -1,0 +1,14 @@
+module tb();
+reg [127:0]data,key;
+wire [127:0]out1;
+
+localparam PERIOD=10;
+
+initial begin
+data=128'h69c4e0d86a7b0430d8cdb78070b4c55a;
+key=128'h13111d7fe3944a17f307a78b4d2b30c5;
+end
+
+invround a(data,out1,key);
+
+endmodule

@@ -1,0 +1,10 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/Key_Expansion.v}
+vlog -vlog01compat -work work +incdir+D:/Handsa/1st\ Year/2nd\ Semester/Projects/Logic\ Project/AES_Project {D:/Handsa/1st Year/2nd Semester/Projects/Logic Project/AES_Project/sbox.v}
+

@@ -1,0 +1,27 @@
+module round(dataIN,keyI,Rcon,dataOUT,keyF)
+
+input [127:0]keyI;
+output [127:0]keyf;
+input [127:0]dataIn;
+output [127:0]dataOUT;
+input [32:0]Rcon;
+
+wire [127:0]SB;
+wire [127:0]SR;
+wire [127:0]MX;
+
+//SubByte
+sub_byte(dataIN,SB);
+
+//shiftrow
+shift_row(SB,SR);
+
+//MixColumn
+mix_col(SR,MX);
+
+//keyExpansion
+Key_Expansion K1(.KeyI(keyI),.rcon(Rcon),.KeyF(keyF));
+
+assign dataout=MX ^ keyF;
+
+endmodule

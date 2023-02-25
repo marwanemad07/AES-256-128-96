@@ -1,0 +1,72 @@
+module main256(datain,out);
+
+input [127:0]datain;
+output [127:0]out;
+
+
+reg [255:0]key0=256'h000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f;
+wire [255:0]key1;
+wire [255:0]key2;
+wire [255:0]key3;
+wire [255:0]key4;
+wire [255:0]key5;
+wire [255:0]key6;
+wire [255:0]key7;
+
+
+wire [127:0]R0;
+wire [127:0]R1;
+wire [127:0]R2;
+wire [127:0]R3;
+wire [127:0]R4;
+wire [127:0]R5;
+wire [127:0]R6;
+wire [127:0]R7;
+wire [127:0]R8;
+wire [127:0]R9;
+wire [127:0]R10;
+wire [127:0]R11;
+wire [127:0]R12;
+wire [127:0]R13;
+
+
+Key_Expansion256 qqq(.KeyI(key0),.rcon(32'h01000000),.KeyF(key1));
+Key_Expansion256 qqq1(.KeyI(key1),.rcon(32'h02000000),.KeyF(key2));
+Key_Expansion256 qqq2(.KeyI(key2),.rcon(32'h04000000),.KeyF(key3));
+Key_Expansion256 qqq3(.KeyI(key3),.rcon(32'h08000000),.KeyF(key4));
+Key_Expansion256 qqq4(.KeyI(key4),.rcon(32'h10000000),.KeyF(key5));
+Key_Expansion256 qqq5(.KeyI(key5),.rcon(32'h20000000),.KeyF(key6));
+Key_Expansion256 qqq6(.KeyI(key6),.rcon(32'h40000000),.KeyF(key7));
+//round0
+assign R0=datain^key0[255:128];
+//round1
+round rr1(.dataIN(R0),.dataOUT(R1),.keyF(key0[127:0]));
+//round2
+round rr2(.dataIN(R1),.dataOUT(R2),.keyF(key1[255:128]));
+//round3
+round rr3(.dataIN(R2),.dataOUT(R3),.keyF(key1[127:0]));
+//round4
+round rr4(.dataIN(R3),.dataOUT(R4),.keyF(key2[255:128]));
+//round5
+round rr5(.dataIN(R4),.dataOUT(R5),.keyF(key2[127:0]));
+//round6
+round rr6(.dataIN(R5),.dataOUT(R6),.keyF(key3[255:128]));
+//round7
+round rr7(.dataIN(R6),.dataOUT(R7),.keyF(key3[127:0]));
+//round8
+round rr8(.dataIN(R7),.dataOUT(R8),.keyF(key4[255:128]));
+//round9
+round rr9(.dataIN(R8),.dataOUT(R9),.keyF(key4[127:0]));
+//round10
+round rr10(.dataIN(R9),.dataOUT(R10),.keyF(key5[255:128]));
+//round11
+round rr11(.dataIN(R10),.dataOUT(R11),.keyF(key5[127:0]));
+//round12
+round rr12(.dataIN(R11),.dataOUT(R12),.keyF(key6[255:128]));
+//round13
+round rr13(.dataIN(R12),.dataOUT(R13),.keyF(key6[127:0]));
+//round14
+lastround rr14(.dataIN(R13),.dataOUT(out),.keyF(key7[255:128])); 
+
+
+endmodule
